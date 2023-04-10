@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/Wybierz"
+        android:layout_width="200dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071">
+
+        <RadioButton
+            android:id="@+id/dodawanie"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Dodaj do listy"
+            android:textAllCaps="true"
+            android:textColor="#9C27B0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/odhaczanie"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:minHeight="48dp"
+            android:text="Odhacz z listy"
+            android:textAllCaps="true"
+            android:textColor="#9C27B0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/Wedliny"
+        android:layout_width="140dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/szynka"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:fontFamily="sans-serif"
+            android:text="Szynka"
+            android:textAllCaps="false"
+            app:chipSurfaceColor="#CCFF90" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/salami"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Salami"
+            app:chipSurfaceColor="#CCFF90" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/kielbasa"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Kiełbasa"
+            app:chipSurfaceColor="#CCFF90" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/wedliny"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Wedliny"
+        android:textAllCaps="true"
+        android:textColor="#CCFF90"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/pieczywo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Pieczywo"
+        android:textAllCaps="true"
+        android:textColor="#FF8A80"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/Pieczywo"
+        android:layout_width="140dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/bagietka"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#673AB7"
+            android:checkable="true"
+            android:text="Bagietka"
+            app:checkedIconTint="#FF8A80"
+            app:chipIconTint="#FFEB3B"
+            app:chipSurfaceColor="#FF8A80" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/croissant"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Croissant"
+            app:chipSurfaceColor="#FF8A80" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chleb"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Chleb"
+            app:chipSurfaceColor="#FF8A80" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/Warzywa"
+        android:layout_width="140dp"
+        android:layout_height="183dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ziemniak"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Ziemniak"
+            app:checkedIconVisible="true"
+            app:chipSurfaceColor="#84FFFF"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/Burak"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Burak"
+            app:chipSurfaceColor="#84FFFF" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/Cebula"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Cebula"
+            app:checkedIconVisible="true"
+            app:chipSurfaceColor="#84FFFF" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/salata"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Sałata"
+            app:chipSurfaceColor="#84FFFF" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/warzywa"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Warzywa"
+        android:textAllCaps="true"
+        android:textColor="#84FFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
